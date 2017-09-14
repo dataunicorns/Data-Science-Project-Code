@@ -1,0 +1,25 @@
+﻿New York,NY,80.1,82.7
+Los Angeles,CA,36.9,38.84
+Chicago,IL,29.0,28.7
+Houston,TX,19.5,22.4
+Phoenix,AZ,13.2,15.7
+Philadelphia,PA,15.2,14.7
+San Antonio,TX,11.4,13.5
+San Diego,CA,12.2,12.8
+Dallas,TX,11.9,12.4
+San Jose,CA,8.9,9.5
+Detroit,MI,9.5,9.3
+Jacksonville,FL,7.4,8.2
+Indianapolis,IN,7.8,8.1
+San Francisco,CA,7.8,7.7
+Columbus,OH,7.1,7.6
+Austin,TX,6.6,7.5
+Fort Worth,TX,5.3,6.9
+Memphis,TN,6.5,6.8
+Charlotte,NC,5.4,6.8
+Baltimore,MD,6.5,6.5
+El Paso,TX,5.6,6.1
+Milwaukee,WI,6.0,6.1
+Boston,MA,5.9,6.1
+Seattle,WA,5.6,6.0
+Nashville-Davidson,TN,5.5,6.0

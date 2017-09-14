@@ -1,0 +1,86 @@
+Wings,silent
+The Broadway Melody,musical
+All Quiet on the Western Front,war
+Cimarron,western
+Grand Hotel,drama
+Cavalcade,drama
+It Happened One Night,romance
+Mutiny on the Bounty,adventure
+The Great Ziegfeld,musical
+The Life of Emile Zola,biopic
+You Can't Take It With You,comedy
+Gone with the Wind,epic
+Rebecca,thriller
+How Green Was My Valley,drama
+Mrs. Miniver,war
+Casablanca,drama
+Going My Way,musical
+The Lost Weekend,drama
+The Best Years of Our Lives,war
+Gentleman's Agreement,drama
+Hamlet,drama
+All the King's Men,drama
+All About Eve,drama
+An American in Paris,musical
+The Greatest Show on Earth,epic
+From Here to Eternity,war
+On the Waterfront,crime
+Marty,romance
+Around the World in 80 Days,adventure
+The Bridge on the River Kwai,war
+Gigi,musical
+Ben-Hur,epic
+The Apartment,comedy
+West Side Story,musical
+Lawrence of Arabia,biopic
+Tom Jones,comedy
+My Fair Lady,musical
+The Sound of Music,musical
+A Man for All Seasons,biopic
+In the Heat of the Night,crime
+Oliver,musical
+Midnight Cowboy,drama
+Patton,biopic
+The French Connection,crime
+The Godfather,crime
+The Sting,comedy
+The Godfather Part II,crime
+One Flew Over the Cuckoo’s Nest,drama
+Rocky,sports
+Annie Hall,comedy
+The Deer Hunter,war
+Kramer vs. Kramer,drama
+Ordinary People,drama
+Chariots of Fire,drama
+Gandhi,biopic
+Terms of Endearment,comedy
+Amadeus,biopic
+Out of Africa,biopic
+Platoon,war
+The Last Emperor,biopic
+Rain Man,drama
+Driving Miss Daisy,comedy
+Dances with Wolves,western
+The Silence of the Lambs,thriller
+Unforgiven,western
+Schindler's List,biopic
+Forrest Gump,comedy
+Braveheart,war
+The English Patient,war
+Titanic,romance
+Shakespeare in Love,romance
+American Beauty,drama
+Gladiator,epic
+A Beautiful Mind,biopic
+Chicago,musical
+The Lord of the Rings:The Return of the King,fantasy
+Million Dollar Baby,sports
+Crash,drama
+The Departed,crime
+No Country for Old Men,crime
+Slumdog Millionaire,romance
+The Hurt Locker,war
+The King's Speech,biopic
+The Artist,silent
+Argo,drama
+12 Years a Slave,biopic

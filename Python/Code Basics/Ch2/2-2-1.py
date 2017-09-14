@@ -1,0 +1,18 @@
+print("Python")
+print("Python"[1], "Python"[5], "Python"[2:4])
+str1 = "Hello World!"
+print(str1.find('W'))
+print(str1.find('x'))
+print(str1.rfind('l'))
+
+
+
+
+
+      
+      
+
+
+
+
+

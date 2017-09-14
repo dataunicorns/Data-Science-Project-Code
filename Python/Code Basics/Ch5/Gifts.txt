@@ -1,0 +1,12 @@
+1,partridge in a pear tree,207.68
+2,turtle doves,62.50
+3,French hens,60.50
+4,calling birds,149.99
+5,gold rings,150.00
+6,geese-a-laying,60.00
+7,swans-a-swimming,1000
+8,maids-a-milking,7.25
+9,ladies dancing,839.20
+10,lords-a-leaping,534.82
+11,pipers piping,239.56
+12,drummers drumming,237.88

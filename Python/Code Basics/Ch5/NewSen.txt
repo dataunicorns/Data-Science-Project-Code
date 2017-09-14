@@ -1,0 +1,13 @@
+Dan Sullivan,Alaska,R
+Tom Cotton,Arkansas,R
+Cory Gardner,Colorado,R
+David Perdue,Georgia,R
+Joni Ernst,Iowa,R
+Bill Cassidy,Louisiana,R
+Gary Peters,Michigan,D
+Steve Daines,Montana,R
+Ben Sasse,Nebraska,R
+Thom Tillis,North Carolina,R
+James Lankford,Oklahoma,R
+Mike Rounds,South Dakota,R
+Shelly Capito,West Virginia,R

@@ -1,0 +1,100 @@
+Jeff Sessions,Alabama,R
+Richard Shelby,Alabama,R
+Lisa Murkowski,Alaska,R
+Mark Begich,Alaska,D
+John McCain,Arizona,R
+Jeff Flake,Arizona,R
+John Boozman,Arkansas,R
+Mark Pryor,Arkansas,D
+Barbara Boxer,California,D
+Dianne Feinstein,California,D
+Michael Bennet,Colorado,D
+Mark Udall,Colorado,D
+Richard Blumenthal,Connecticut,D
+Chris Murphy,Connecticut,D
+Thomas Carper,Delaware,D
+Chris Coons,Delaware,D
+Marco Rubio,Florida,R
+Bill Nelson,Florida,D
+Saxby Chambliss,Georgia,R
+Johnny Isakson,Georgia,R
+Brian Schatz,Hawaii,D
+Mazie Hirona,Hawaii,D
+Mike Crapo,Idaho,R
+Jim Risch,Idaho,R
+Richard Durbin,Illinois,D
+Mark Kirk,Illinois,R
+Dan Coats,Indiana,R
+Joe Donnelly,Indiana,D
+Chuck Grassley,Iowa,R
+Tom Harkin,Iowa,D
+Pat Roberts,Kansas,R
+Jerry Moran,Kansas,R
+Mitch McConnell,Kentucky,R
+Rand Paul,Kentucky,R
+Mary Landrieu,Louisiana,D
+David Vitter,Louisiana,R
+Susan Collins,Maine,R
+Angus King,Maine,I
+Benjamin Cardin,Maryland,D
+Barbara Mikulski,Maryland,D
+Edward Markey,Massachusetts,D
+Elizabeth Warren,Massachusetts,D
+Carl Levin,Michigan,D
+Debbie Stebenow,Michigan,D
+Amy Klobuchar,Minnesota,D
+Al Franken,Minnesota,D
+Thad Cochran,Mississippi,R
+Roger Wicker,Mississippi,R
+Roy Blunt,Missouri,R
+Claire McCaskill,Missouri,D
+Max Baucus,Montana,D
+John Walsh,Montana,D
+Mike Johanns,Nebraska,R
+Deb Fischer,Nebraska,R
+Dean Heller,Nevada,R
+Harry Reid,Nevada,D
+Kelly Ayotte,New Hampshire,R
+Jeanne Shaheen,New Hampshire,D
+Cory Booker,New Jersey,D
+Robert Menendez,New Jersey,D
+Tom Udall,New Mexico,D
+Martin Heinrich,New Mexico,D
+Charles Schumer,New York,D
+Kirsten Gillibrand,New York,D
+Richard Burr,North Carolina,R
+Kay Hagan,North Carolina,D
+John Hoeven,North Dakota,R
+Heidi Heitkamp,North Dakota,D
+Sherrod Brown,Ohio,D
+Rob Portman,Ohio,R
+Tom Coburn,Oklahoma,R
+James Inhofe,Oklahoma,R
+Ron Wyden,Oregon,D
+Jeff Merkley,Oregon,D
+Robert Casey,Pennsylvania,D
+Pat Toomey,Pennsylvania,R
+Jack Reed,Rhode Island,D
+Sheldon Whitehouse,Rhode Island,D
+Lindsey Graham,South Carolina,R
+Tim Scott,South Carolina,R
+Tim Johnson,South Dakota,D
+John Thune,South Dakota,R
+Lamar Alexander,Tennessee,R
+Bob Corker,Tennessee,R
+John Cornyn,Texas,R
+Ted Cruz,Texas,R
+Mike Lee,Utah,R
+Orrin Hatch,Utah,R
+Patrick Leahy,Vermont,D
+Bernard Sanders,Vermont,I
+Mark Warner,Virginia,D
+Tim Kaine,Virginia,D
+Maria Cantwell,Washington,D
+Patty Murray,Washington,D
+Joe Manchin,West Virginia,D
+John Rockefeller,West Virginia,D
+Tammy Baldwin,Wisconsin,D
+Ron Johnson,Wisconsin,R
+John Barrasso,Wyoming,R
+Michael Enzi,Wyoming,R

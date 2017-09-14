@@ -1,0 +1,30 @@
+American Express,AXP,NYSE,Consumer finance,57.48,90.73,4.88,0.89
+Boeing,BA,NYSE,Aerospace & defense,75.36,136.49,5.96,2.19
+Caterpillar,CAT,NYSE,Construction & mining equipment,89.61,90.81,5.75,2.32
+Cisco Systems,CSCO,NASDAQ,Computer networking,19.65,22.43,1.49,0.72
+Chevron Corporation,CVX,NYSE,Oil & gas,108.14,124.91,11.09,4
+DuPont,DD,NYSE,Chemical industry,44.98,64.97,5.18,1.8
+Walt Disney,DIS,NYSE,Broadcasting & entertainment,49.74,76.4,3.38,0.75
+General Electric,GE,NYSE,Conglomerate,20.99,28.03,1.27,0.79
+Goldman Sachs,GS,NYSE,Banking,176.96,177.26,15.96,2.05
+The Home Depot,HD,NYSE,Home improvement retailer,61.85,61.85,3.76,1.64
+International Business Machines,IBM,NYSE,Computers & technology,191.55,187.57,14.34,3.8
+Intel,INTC,NASDAQ,Semiconductors,20.62,25.95,1.89,0.9
+Johnson & Johnson,JNJ,NYSE,Pharmaceuticals,70.1,91.59,4.81,2.59
+JPMorgan Chase,JPM,NYSE,Banking,43.97,58.48,4.35,1.44
+Coca-Cola,KO,NYSE,Beverages,36.25,41.31,1.9,1.12
+McDonald's,MCD,NYSE,Fast food,88.21,97.03,5.55,3.12
+3M,MMM,NYSE,Conglomerate,92.85,140.25,6.72,2.76
+Merck,MRK,NYSE,Pharmaceuticals,40.94,50.05,1.47,1.73
+Microsoft,MSFT,NASDAQ,Software,26.71,37.41,2.63,1.07
+Nike,NKE,NYSE,Consumer goods,78.7,78.64,2.97,0.93
+Pfizer,PFE,NYSE,Pharmaceuticals,25.08,30.63,3.19,0.98
+Procter & Gamble,PG,NYSE,Consumer goods,67.89,81.41,4.01,2.49
+AT&T,T,NYSE,Telecommunication,33.71,35.16,3.39,1.81
+Travelers,TRV,NYSE,Insurance,71.82,90.54,9.74,1.96
+UnitedHealth Group,UNH,NYSE,Managed health care,54.24,75.3,5.5,1.052
+United Technologies Corp.,UTX,NYSE,Conglomerate,82.01,113.8,6.25,2.25
+Verizon,VZ,NYSE,Telecommunication,43.27,49.14,4,2.06
+Visa,V,NYSE,Consumer finance,222,222.68,7.59,1.39
+Walmart,WMT,NYSE,Retail,68.23,78.69,4.88,0.47
+ExxonMobil,XOM,NYSE,Oil & gas,86.55,101.2,7.37,2.52

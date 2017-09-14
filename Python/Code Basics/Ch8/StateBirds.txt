@@ -1,0 +1,50 @@
+Alabama,Yellowhammer
+Alaska,Willow ptarmigan
+Arizona,Cactus wren
+Arkansas,Mockingbird
+California,Valley quail
+Colorado,Lark bunting
+Connecticut,American robin
+Delaware,Blue hen chicken
+Florida,Mockingbird
+Georgia,Brown thrasher
+Hawaii,Hawaiian goose
+Idaho,Mountain bluebird
+Illinois,Cardinal
+Indiana,Cardinal
+Iowa,Eastern goldfinch
+Kansas,Western meadowlark
+Kentucky,Cardinal
+Louisiana,Pelican
+Maine,Chickadee
+Maryland,Baltimore oriole
+Massachusetts,Chickadee
+Michigan,Robin
+Minnesota,Loon
+Mississippi,Mockingbird
+Missouri,Bluebird
+Montana,Western meadowlark
+Nebraska,Western meadowlark
+Nevada,Mountain bluebird
+New Hampshire,Purple finch
+New Jersey,Eastern goldfinch
+New Mexico,Roadrunner
+New York,Eastern bluebird
+North Carolina,Cardinal
+North Dakota,Western meadowlark
+Ohio,Cardinal
+Oklahoma,Scissor-tailed flycatcher
+Oregon,Western meadowlark
+Pennsylvania,Ruffed grouse
+Rhode Island,Rhode Island red
+South Carolina,Carolina wren
+South Dakota,Ring-necked pheasant
+Tennessee,Mockingbird
+Texas,Mockingbird
+Utah,Sea gull
+Vermont,Hermit thrush
+Virginia,Cardinal
+Washington,Willow goldfinch
+West Virginia,Cardinal
+Wisconsin,Robin
+Wyoming,Western meadowlark

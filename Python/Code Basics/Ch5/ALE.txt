@@ -1,0 +1,5 @@
+Baltimore,93,69
+Boston,69,93
+New York,95,67
+Tampa Bay,90,72
+Toronto,73,89

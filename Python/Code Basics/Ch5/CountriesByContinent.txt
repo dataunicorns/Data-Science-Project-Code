@@ -1,0 +1,11 @@
+Algeria,Africa
+Angola,Africa
+Afghanistan,Asia
+Armenia,Asia
+Azerbaijan,Asia
+Australia,Australia/Oceania
+Albania,Europe
+Andorra,Europe
+Austria,Europe
+Antigua and Barbuda,North America
+Argentina,South America

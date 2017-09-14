@@ -1,0 +1,5 @@
+George Washington,57
+John Adams,61
+Thomas Jefferson,57
+James Madison,57
+James Monroe,58

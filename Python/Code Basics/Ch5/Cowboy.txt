@@ -1,0 +1,5 @@
+Colt Peacemaker,12.20
+Holster,2.00
+Levi Strauss jeans,1.35
+Saddle,40.00
+Stetson,10.00

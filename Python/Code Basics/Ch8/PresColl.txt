@@ -1,0 +1,43 @@
+George Washington,No college
+John Adams,Harvard
+Thomas Jefferson,William and Mary
+James Madison,Princeton
+James Monroe,William and Mary
+John Q. Adams,Harvard
+Andrew Jackson,No college
+Martin Van Buren,No college
+William Harrison,Hampden-Sydney
+John Tyler,William and Mary
+James Polk,North Carolina
+Zachary Taylor,No college
+Millard Fillmore,No college
+Franklin Pierce,Bowdoin
+James Buchanan,Dickinson
+Abraham Lincoln,No college
+Andrew Johnson,No college
+Ulysses Grant,West Point
+Rutherford Hayes,Kenyon
+James Garfield,Williams
+Chester Arthur,Union
+Grover Cleveland,No college
+Benjamin Harrison,Miami (Ohio)
+William McKinley,Allegheny
+Theodore Roosevelt,Harvard
+William Taft,Yale
+Woodrow Wilson,Princeton
+Warren Harding,Ohio Central
+Calvin Coolidge,Amherst
+Herbert Hoover,Stanford
+Franklin Roosevelt,Harvard
+Harry Truman,No college
+Dwight Eisenhower,West Point
+John Kennedy,Harvard
+Lyndon Johnson,Southwest Texas State
+Richard Nixon,Whittier
+Gerald Ford,Michigan
+James Carter,Naval Academy
+Ronald Reagan,Eureka
+George H. W. Bush,Yale
+Bill Clinton,Georgetown
+George W. Bush,Yale
+Barack Obama,Columbia

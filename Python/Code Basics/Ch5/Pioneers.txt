@@ -1,0 +1,32 @@
+Charles Babbage,is called the father of the computer
+Augusta Ada Byron,was the first computer programmer
+Alan Turing,was a computer science theorist
+John V. Atanasoff,invented the electronic digital computer
+Grace M. Hopper,coined the term debugging
+John Mauchley,built the ENIAC computer
+J. Presper Eckert,built the ENIAC computer
+John von Neumann,developed the stored program concept
+John Backus,developed FORTRAN
+Reynold B. Johnson,invented the computer disk drive
+Harlan B. Mills,advocated use of structured programming
+Donald E. Knuth,wrote The Art of Computer Programming
+Ted Hoff,developed the first microprocessor chip
+Stan Mazer,developed the first microprocessor chip
+Robert Noyce,developed the first microprocessor chip
+Federico Faggin,developed the first microprocessor chip
+Douglas Engelbart,invented the computer mouse
+Bill Gates,founded Microsoft
+Paul Allen,founded Microsoft
+Stephen Wozniak,founded Apple Computer Inc
+Stephen Jobs,founded Apple Computer Inc
+Dennis Ritchie,invented the C programing language
+Ken Thompson,created Unix operating system
+Alan Kay,developed first object-oriented language
+Tim Berners–Lee,invented the World Wide Web
+Charles Simonyi,developed Word
+Bjarne Stroustrup,created C++
+Richard M. Stallman,founded Free Software Foundation
+Marc Andreessen,developed the first major Web browser
+James Gosling,created the Java programming language
+Linus Torvalds,developed the Linux operating system
+Guido van Rossum,created Python

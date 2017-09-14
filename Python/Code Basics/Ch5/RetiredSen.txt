@@ -1,0 +1,13 @@
+Mark Begich,Alaska,D
+Mark Pryor,Arkansas,D
+Mark Udall,Colorado,D
+Saxby Chambliss,Georgia,R
+Tom Harkin,Iowa,D
+Mary Landrieu,Louisiana,D
+Carl Levin,Michigan,D
+Mike Johanns,Nebraska,R
+Max Baucus,Montana,D
+Kay Hagan,North Carolina,D
+Tom Coburn,Oklahoma,R
+Tim Johnson,South Dakota,D
+John Rockefeller,West Virginia,D
