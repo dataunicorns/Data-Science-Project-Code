@@ -1,0 +1,91 @@
+---
+title: "Visualizations"
+author: "Data Science Project"
+date: "September 9, 2017"
+output: html_document
+---
+####Visualizations Basics####
+
+This is a file for the basics of visualisations.
+
+```{r}
+library(ISwR)
+juulData=juul
+
+str(juulData)
+head(juulData)
+tail(juulData)
+```
+
+##Histogram##
+
+```{r}
+hist(juulData$igf1,breaks = 45,col = "pink",xlab= "Insulin Growth Factor",main = "IGF Distribution",xlim = c(0,1000),ylim = c(0,60))
+```
+
+## Pie Chart
+
+```{r}
+library(datasets)
+##write.csv(mtcars,file = "mtCars.csv")```{r}
+
+
+library(readr)
+mtCarsData <- read_csv("R:/Data Science Project (DSP)/mtCars.csv")
+
+
+##mtcarsdata= file.choose()
+str(mtCarsData)
+summary(mtCarsData)
+pie(table(mtCarsData$`Car Names`))
+
+plot(mtCarsData$mpg,mtCarsData$disp)
+```
+
+##BoxPlot
+
+```{r}
+boxplot(mtCarsData$mpg~mtCarsData$`Car Names`)
+
+
+```
+
+##Scatter Plot
+
+```{r}
+plot(mtCarsData$mpg~mtCarsData$wt,col="red")
+```
+
+Linear regression for example
+
+```{r}
+ linear = lm(mtCarsData$mpg~mtCarsData$cyl+mtCarsData$wt,mtCarsData)
+
+plot(linear)
+```
+
+
+##Pairs Plot##
+```{r}
+summary(mtCarsData)
+pairs(mtCarsData[2:5])
+```
+#ScatterPlot##
+
+```{r}
+library(scatterplot3d)
+scatterplot3d(iris$Petal.Width,iris$Sepal.Length,iris$Sepal.Width)
+
+```
+
+##Contour Plot
+
+```{r}
+library(lattice)
+filled.contour(volcano,color= terrain.colors,asp=1,plot.axes = contour(volcano,add = T))
+```
+
+```{r}
+persp(volcano,theta = 25,phi = 30,expand = 0.5,col = "lightblue")
+```
+
