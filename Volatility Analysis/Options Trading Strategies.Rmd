@@ -5,7 +5,7 @@ date: "December 5, 2017"
 output: html_document
 ---
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 # 1. Load R Packages
 library("Quandl")
 library("quantmod")
