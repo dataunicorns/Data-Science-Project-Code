@@ -69,7 +69,27 @@ ui <- (dashboardPage(
      )),
      
      tabItem(tabName = "second", 
-             h2("Volatility Analysis of the Stock")))
+             h2("Volatility Analysis of the Stock"),
+             
+             fluidRow(
+               box(
+                 title = "Controls", width = 3,
+                 selectInput("Stock"," Stock to be analysed", 
+                             choices = companies),
+                 radioButtons("Indicator"," Please select the type of Indicator", choices = c("Leading","Lagging")),
+                 
+                 conditionalPanel(condition = "input.Indicator =='Lagging'", 
+                                  selectInput("LaggingLeading","Please select the Lagging Indicator",
+                                              choices = c("Simple Moving Average","Exponential Moving Average","Bollinger Bands"))),
+                 
+                 conditionalPanel(condition = "input.Indicator =='Leading'", 
+                                  selectInput("LaggingLeading","Please select the Leading Indicator",
+                                              choices = c("ADX","CCI","MACD")))
+               ),
+               
+               box(width = 9, plotOutput("TechnicalAnalysisChart", height = 350)))
+             
+             ))
    )
   )
 )
