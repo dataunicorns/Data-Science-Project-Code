@@ -15,7 +15,7 @@ library(shinydashboard)
 library("TTR") #Technical Trading Rules Package
 library("quantmod") # Quantitative Financial Modelling and Trading Framework for R
 library("PerformanceAnalytics") #Econometric tools for performance and risk analysis
-
+library("Quandl")
 
 companies = c("Apple,INC"= "AAPL",
               "VALERO ENERGY"="VLO",
@@ -69,7 +69,14 @@ ui <- (dashboardPage(
      )),
      
      tabItem(tabName = "second", 
-             h2("Volatility Analysis of the Stock")))
+             h2("Volatility Analysis of the Stock"),
+             
+             fluidRow(
+               
+               
+               box(width = 9, plotOutput("Volatility", height = 350)))
+             
+             ))
    )
   )
 )
@@ -115,7 +122,24 @@ server <- function(input, output, session) {
   })
   
   
-  
+  output$Volatility = renderPlot({
+    # 2. Data Downloading
+    htickers <- "CBOE/VIX/4"
+    htickers2 <- "^GSPC"
+    hdata <- Quandl(htickers,type="xts",start_date="2007-01-01",end_date="2017-01-01")
+    GSPC = getSymbols(htickers2,src='yahoo',from="2007-01-01",to="2017-01-01", auto.assign = FALSE)
+    hdata <- cbind(GSPC[,1:4],hdata)
+    hdata <- hdata[complete.cases(hdata),]
+    
+    # 3. Historical Volatility Estimation
+    hspxohlc <- hdata[,1:4]
+    
+    # 3.1. Close to Close Estimation
+    hvolcc <- volatility(hspxohlc,calc="close",n=21,N=252)
+    # 3.1.1. Close to Close Estimation Chart
+    plot(hvolcc,main="Close to Close Volatility Estimation")
+    #legend("topright",col="black",lty=1,legend="cc")
+  })
   
   
   
