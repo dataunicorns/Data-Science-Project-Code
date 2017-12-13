@@ -61,14 +61,111 @@ There are two kinds of main Technicals, i.e, Lagging & Leading. Indicators are t
 
 Leading indicators are generally used to predict changes in the economy, however, they are not always accurate. The lagging indicators trail the changes in the price action of the stock, which generate transaction signals and also confirm the strength of the leading indicator trend. Thus, the lagging indicators are more relied upon compared to the leading indicators.
 
-Let us now take a look at some of the Technical Indicators in R. Further reading related to the stocks can be found in the references.
+Let us now take a look at some of the Technical Indicators in R. Further reading related to the stocks can be found in the references. 
+
+####Please note that the code for App is seperately designed and the code for the report is seperately designed in order to provide more clarity on one of the stocks (Apple in this case), however the app is capable of choosing any stock and it can provide the analysis on the same. Kindly find the code for the app in the app.R file.
+
+We will firstly take a look at the leading indicators as they lead the change and then go to the lagging indicators as they lag the change in the economy.
+
+###Leading Indicators###
+
+####Average Directional Movement Index (ADX)####
+
+This is a metric that is used to understand the strength of the trend of a stock. This is non directional, hence only gives the strength alone, thus it is generally plotted with the Directional Movement Indicators (DMI) in order to understand the direction os the momentum too.
+
+```{r Leading Indicators, message=FALSE, warning=FALSE}
+#Average Directional Movement Index ADX(14)
+adx <- ADX(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=14)
+# Technical Analysis Chart
+barChart(aapl)
+addADX(n=14)
+```
+
+####Commodity Channel Index####
+
+CCI is used to indicate if a stock is overbought or oversould. This helps the traders analyse is there is a sudden change in the direction of the institutional conivtion or a launch of the new product, etc. This thereby helps them to use the indicator to invest more or less money in that trade as soon as possible, before the trend gets saturated. We can take bitcoin for example, where the CCI of the stock would be really high, as it is overbought and oversold now.
+
+```{r}
+
+#Commodity Channel Index CCI(20,0.015)
+cci <- CCI(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=20,c=0.015)
+# Technical Analysis Chart
+barChart(aapl)
+addCCI(n=20,c=0.015)
+```
+
+####Moving Averages Convergence/Divergence MACD####
+
+MACD is used to understand the existence of a trend that has been followed by the stock over the last 26 days and the 12 days. this is like the comparison between the two trends and then analysis if th trend is existing or is there a newer trend that has replaced the older one.
+
+```{r}
+#Moving Averages Covergence/Divergence MACD(12,26,9)
+macd <- MACD(Cl(aapl),nFast=12,nSlow=26,nSig=9)
+# Technical Analysis Chart
+barChart(aapl)
+addMACD()
+```
+
+####Rate of Change(ROC)####
+
+The price rate of change (ROC) is the percentage of change in the price between the current price & the price that was n periods in the past. It is calculated with the following formula.
+
+![Formula](https://www.investopedia.com/terms/r/rateofchange.asp)
+
+![ROC Curve Illustration](https://i.investopedia.com/inv/dictionary/terms/ROC2.gif)
+
+```{r}
+#Rate Of Change ROC(21)
+roc <- ROC(aapl,n=21)
+# Technical Analysis Chart
+barChart(aapl)
+addROC(n=21)
+```
+
+####Relative Strength Index (RSI)####
+
+RSI attempts to compare the magnitude of the recent gains and losses over a specific time period in order to understand if the stock has been oversold or overbought in a given period of time and what are the effects of the same on the individual trader.
+
+```{r}
+#Relative Strength Index RSI(14)
+rsi <- RSI(Cl(aapl),n=14)
+# Technical Analysis Chart
+barChart(aapl)
+addRSI(n=14)
+```
+
+####Stochastic Momentum Index SMI####
+
+SMI is the more refined version of the Stochastic Oscillator. This is used to easily assess the sensitivity in the market and understand the pattern in the changes that the stock faces, based on the closing prices alone. Please refer to the references[11] in case you desire to seek further clarification regarding this indicator, as the detailed explanation about the same is out of the scope of this report.
+
+```{r}
+#Stochastic Momentum Index SMI(13,2,25,9)
+smi <- SMI(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=13,nFast=2,nSlow=25,nSig=9)
+# Technical Analysis Chart
+barChart(aapl)
+addSMI(n=13)
+```
+
+####Williams %R####
+
+Williams %R is the William's Percentage Range, which is used to indicate the measures of overbought or oversold levels, comparable to the stochastic oscillator mentioned in the previous indicator. The time period used is typically about 14 days.
+
+![](https://i.investopedia.com/inv/dictionary/terms/WilliamsR.gif.gif)
+
+```{r}
+#Williams %R(14)
+wpr <- WPR(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=14)
+# Technical Analysis Chart
+barChart(aapl)
+addWPR(n=14)
+
+```
+
 
 ###Lagging Technical Indicators###
 
 ```{r Lagging Indicators, message=FALSE, warning=FALSE}
-# 2.1. Lagging Stock Technical Indicators 
-
-# 2.1.1. Moving Averages MA, Simple Moving Averages SMA(5 & 21), Exponential Moving Averages EMA(5 & 21)
+#Moving Averages MA, Simple Moving Averages SMA(5 & 21), Exponential Moving Averages EMA(5 & 21)
 
 # Simple Moving Average
 sma5 <- SMA(Cl(aapl),n=5)
@@ -78,9 +175,10 @@ barChart(aapl)
 addSMA(n=5,col=4)
 addSMA(n=21,col=6)
 # Manual Chart
-plot(Cl(aapl),main="Simple Moving Averages SMA(5 & 21)")
+plot(Cl(aapl),main="Simple Moving Averages SMA(5 & 21) for AAPL")
 lines(sma5,col=4)
 lines(sma21,col=6)
+
 
 # Exponential Moving Average
 ema5 <- EMA(Cl(aapl),n=5)
@@ -94,7 +192,17 @@ plot(Cl(aapl),main="Exponential Moving Averages EMA(5 & 21)")
 lines(ema5,col=4)
 lines(ema21,col=6)
 
-# 2.1.2. Bollinger Bands BB(20,2)
+
+```
+
+###Bollinger Bands###
+
+Bollinger Bands are the bands designed by the reputed technical trader John Bollinger. These are the bands that are plotted two standard deviations away from the SMA line. These bands provide and estimate as to what can be the highest possible variation. 
+
+These bands can be used in the assessment of the volatility too and thereby help the trader in options trading too. Bollinger bands provide the 21 day SMA for the stock. This can be changed in case that the user needs to assess for a different number of points.
+
+```{r}
+# Bollinger Bands BB(20,2)
 bb <- BBands(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=20,sd=2)
 # Technical Analysis Chart
 barChart(aapl)
@@ -107,7 +215,17 @@ lines(bb[,3],col=4)
 # Middle Band
 lines(bb[,2],col=5)
 
-# 2.1.3. Parabolic Stop and Reverse SAR(0.02,0.2)
+```
+
+###Parabolic Stop & Reversal (SAR)###
+
+This is an indicator that is used by traders to measure the meomentum of the stock and assess the moment at which the momentum is about to change, based on this probability the traders buy and sell the stocks. This is one of the key metrics used by short term traders. This metric helps the industry in the case when the data is being consumed on a minute basis or even less. Then the moment at which the stock changes, the trader either sells the stock or buys it. This metric can also be used for automation of the whole process, thus eliminating the need for a trader.
+
+![SAR Analysis Example](https://i.investopedia.com/inv/articles/site/SAR1.gif)
+
+```{r}
+
+# Parabolic Stop and Reverse SAR(0.02,0.2)
 sar <- SAR(cbind(Hi(aapl),Lo(aapl)),accel=c(0.02, 0.2))
 # Technical Analysis Chart
 barChart(aapl)
@@ -118,55 +236,6 @@ points(sar,col=4)
 
 ```
 
-###Leading Indicators###
-
-```{r Leading Indicators, message=FALSE, warning=FALSE}
-
-# 2.2. Leading Stock Technical Indicators
-
-# 2.2.1. Average Directional Movement Index ADX(14)
-adx <- ADX(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=14)
-# Technical Analysis Chart
-barChart(aapl)
-addADX(n=14)
-
-# 2.2.2. Commodity Channel Index CCI(20,0.015)
-cci <- CCI(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=20,c=0.015)
-# Technical Analysis Chart
-barChart(aapl)
-addCCI(n=20,c=0.015)
-
-# 2.2.3. Moving Averages Covergence/Divergence MACD(12,26,9)
-macd <- MACD(Cl(aapl),nFast=12,nSlow=26,nSig=9)
-# Technical Analysis Chart
-barChart(aapl)
-addMACD()
-
-# 2.2.4. Rate Of Change ROC(21)
-roc <- ROC(aapl,n=21)
-# Technical Analysis Chart
-barChart(aapl)
-addROC(n=21)
-
-# 2.2.5. Relative Strength Index RSI(14)
-rsi <- RSI(Cl(aapl),n=14)
-# Technical Analysis Chart
-barChart(aapl)
-addRSI(n=14)
-
-# 2.2.6. Stochastic Momentum Index SMI(13,2,25,9)
-smi <- SMI(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=13,nFast=2,nSlow=25,nSig=9)
-# Technical Analysis Chart
-barChart(aapl)
-addSMI(n=13)
-
-# 2.2.7. Williams %R(14)
-wpr <- WPR(cbind(Hi(aapl),Lo(aapl),Cl(aapl)),n=14)
-# Technical Analysis Chart
-barChart(aapl)
-addWPR(n=14)
-
-```
 
 
 ###Stock Technical Signals###
@@ -271,6 +340,10 @@ addWPR(n=14)
 wprtr <- Lag(ifelse(Lag(wpr)>0.80&wpr<0.80,1,ifelse(Lag(wpr)>0.20&wpr<0.20,-1,0)))
 wprtr[is.na(wprtr)] <- 0
 
+```
+
+
+```{r}
 # 3.2. Multiple Indicators Trading Signals
 
 # 3.2.1. Commodity Channel Index CCI(20,0.015) and Simple Moving Average SMA(5) Trading Signals
@@ -641,3 +714,10 @@ You can find the references to the code and the pictures in the following docume
 3. https://www.tradingtechnologies.com/help/x-study/technical-indicator-definitions/list-of-technical-indicators/
 4. http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators
 5. https://www.investopedia.com/terms/t/technicalindicator.asp
+6. https://www.investopedia.com/terms/b/bollingerbands.asp
+7. https://index.investopedia.com/index/?q=CCI&o=40186&qo=investopediaSiteSearch
+8. https://www.investopedia.com/terms/m/macd.asp
+9. https://www.investopedia.com/terms/p/pricerateofchange.asp
+10. https://www.investopedia.com/terms/r/rsi.asp?ad=dirN&qo=investopediaSiteSearch&qsrc=0&o=40186
+11. https://www.investopedia.com/ask/answers/021315/what-difference-between-stochastic-oscillator-stochastic-momentum-index.asp
+12. https://www.investopedia.com/terms/w/williamsr.asp?ad=dirN&qo=investopediaSiteSearch&qsrc=0&o=40186

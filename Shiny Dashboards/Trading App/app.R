@@ -17,6 +17,7 @@ library("quantmod") # Quantitative Financial Modelling and Trading Framework for
 library("PerformanceAnalytics") #Econometric tools for performance and risk analysis
 library("Quandl")
 
+#Top Companies based on some of the ETFs in the market
 companies = c("Apple,INC"= "AAPL",
               "VALERO ENERGY"="VLO",
               "INTEL CORP"="INTC",
@@ -29,7 +30,7 @@ companies = c("Apple,INC"= "AAPL",
               "VMWARE INC"="VMW",
               "FORD MTR CO DEL"="F")
 
-# Define UI for application that draws a histogram
+# Define UI for application
 ui <- (dashboardPage( 
   dashboardHeader(title ="Trading Analysis"),
   dashboardSidebar(
@@ -91,7 +92,7 @@ ui <- (dashboardPage(
                    
      )),
      
-#-------------------Volatility Analysis UI -----------------------------------------------------     
+#-------------------Volatility Analysis UI (Trial)-----------------------------------------------------     
      
      
      tabItem(tabName = "second", 
@@ -112,6 +113,12 @@ ui <- (dashboardPage(
 
 
 stockData = getSymbols("AAPL",src="google", auto.assign = FALSE, from = '2012-01-01', to = Sys.Date())
+
+
+##### SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE #####
+##### SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE #####
+##### SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE ########## SERVER CODE #####
+
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
@@ -176,7 +183,7 @@ server <- function(input, output, session) {
   
   
   output$Bollinger = renderPlot({
-    # 2.1.2. Bollinger Bands BB(20,2)
+    # Bollinger Bands BB(20,2)
     bb <- BBands(cbind(Hi(stockData()),Lo(stockData()),Cl(stockData())),n=20,sd=2)
     # Technical Analysis Chart
     barChart(stockData())
@@ -191,7 +198,7 @@ server <- function(input, output, session) {
   })
   
   output$Parabolic = renderPlot({
-    # 2.1.3. Parabolic Stop and Reverse SAR(0.02,0.2)
+    # Parabolic Stop and Reverse SAR(0.02,0.2)
     sar <- SAR(cbind(Hi(stockData()),Lo(stockData())),accel=c(0.02, 0.2))
     # Technical Analysis Chart
     barChart(stockData())
@@ -206,7 +213,7 @@ server <- function(input, output, session) {
   
   output$ADX = renderPlot({
     
-    # 2.2.1. Average Directional Movement Index ADX(14)
+    # Average Directional Movement Index ADX(14)
     adx <- ADX(cbind(Hi(stockData()),Lo(stockData()),Cl(stockData())),n=14)
     # Technical Analysis Chart
     barChart(stockData())
@@ -214,7 +221,7 @@ server <- function(input, output, session) {
   })
   
   output$CCI = renderPlot({
-    # 2.2.2. Commodity Channel Index CCI(20,0.015)
+    # Commodity Channel Index CCI(20,0.015)
     cci <- CCI(cbind(Hi(stockData()),Lo(stockData()),Cl(stockData())),n=20,c=0.015)
     # Technical Analysis Chart
     barChart(stockData())
@@ -222,7 +229,7 @@ server <- function(input, output, session) {
   })
   
   output$MACD = renderPlot({
-    # 2.2.3. Moving Averages Covergence/Divergence MACD(12,26,9)
+    # Moving Averages Covergence/Divergence MACD(12,26,9)
     macd <- MACD(Cl(stockData()),nFast=12,nSlow=26,nSig=9)
     # Technical Analysis Chart
     barChart(stockData())
@@ -230,7 +237,7 @@ server <- function(input, output, session) {
   })
   
   output$ROC = renderPlot({
-    # 2.2.4. Rate Of Change ROC(21)
+    # Rate Of Change ROC(21)
     roc <- ROC(stockData(),n=21)
     # Technical Analysis Chart
     barChart(stockData())
@@ -238,7 +245,7 @@ server <- function(input, output, session) {
   })
   
   output$RSI = renderPlot({
-    # 2.2.5. Relative Strength Index RSI(14)
+    # Relative Strength Index RSI(14)
     rsi <- RSI(Cl(stockData()),n=14)
     # Technical Analysis Chart
     barChart(stockData())
@@ -247,7 +254,7 @@ server <- function(input, output, session) {
   })
   
   output$SMI = renderPlot({
-    # 2.2.6. Stochastic Momentum Index SMI(13,2,25,9)
+    # Stochastic Momentum Index SMI(13,2,25,9)
     smi <- SMI(cbind(Hi(stockData()),Lo(stockData()),Cl(stockData())),n=13,nFast=2,nSlow=25,nSig=9)
     # Technical Analysis Chart
     barChart(stockData())
@@ -255,7 +262,7 @@ server <- function(input, output, session) {
   })
   
   output$WilliamsR = renderPlot({
-    # 2.2.7. Williams %R(14)
+    # Williams %R(14)
     wpr <- WPR(cbind(Hi(stockData()),Lo(stockData()),Cl(stockData())),n=14)
     # Technical Analysis Chart
     barChart(stockData())
@@ -268,7 +275,7 @@ server <- function(input, output, session) {
 #-------------------------Volatility Analysis-------------------------------------------------------  
   
   output$Volatility = renderPlot({
-    # 2. Data Downloading
+    # Data Acquisition from QUandl
     htickers <- "CBOE/VIX/4"
     htickers2 <- "^GSPC"
     hdata <- Quandl(htickers,type="xts",start_date="2007-01-01",end_date="2017-01-01")
@@ -277,12 +284,12 @@ server <- function(input, output, session) {
     hdata <- cbind(voltData[,1:4],hdata)
     hdata <- hdata[complete.cases(hdata),]
     
-    # 3. Historical Volatility Estimation
+    #Historical Volatility Estimation
     hspxohlc <- hdata[,1:4]
     
-    # 3.1. Close to Close Estimation
+    #Close to Close Estimation
     hvolcc <- volatility(hspxohlc,calc="close",n=21,N=252)
-    # 3.1.1. Close to Close Estimation Chart
+    #Close to Close Estimation Chart
     plot(hvolcc,main=paste("Close to Close Volatility Estimation for ",TickerVolt()))
     #legend("topright",col="black",lty=1,legend="cc")
   })
